@@ -24,11 +24,27 @@ for (int y = 0; y < grid.Count; y++)
     }
 }
 
+var directions = new List<(int, int)>();
+foreach (var x in Enumerable.Range(-1, 3))
+{
+    foreach (var y in Enumerable.Range(-1, 3))
+    {
+        if (x != 0 || y != 0)
+        {
+            directions.Add((x, y));
+        }
+    }
+}
+
 foreach (var xCoord in xCoordinates)
 {
-    if (letterCoordinates[(xCoord.x + 1, xCoord.y)] == 'M')
+    foreach (var direction in directions)
     {
-
+        var (x, y) = direction;
+        foreach (var distance in Enumerable.Range(1, 3))
+        {
+            if ()
+        }
     }
 }
 

@@ -21,6 +21,12 @@
             "type": "dotnet",
             "request": "launch",
             "projectPath": "${workspaceFolder}/src/DayTwo/DayTwo.csproj"
+        },
+        {
+            "name": "C#: Day Twelve Debug",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/src/DayTwelve/DayTwelve.csproj"
         }
 
     ]
